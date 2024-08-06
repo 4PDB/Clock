@@ -9,3 +9,34 @@ html {
 body {
     font-size: 1.6rem;
 }
+
+.dateBox, .clockBox {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.mainPage {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 20rem auto 20rem;
+    grid-template-rows: 10rem auto 10rem;
+    gap: 5rem;
+}
+.dateBox {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 2rem;
+}
+.clockBox {
+    grid-column: 2;
+    font-size: 15rem;
+    grid-row: 2;
+}
+.dateBox, .clockBox {
+    color: white;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    filter: drop-shadow(gray 1rem 1rem 2rem);
+}
